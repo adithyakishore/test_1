@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="alert('baabtra')">click</button>      <!-- inline -->
+    <script>
+        document.write("hello");   // to dsply html
+        let age=25;
+        let name = 'adhi';
+        let student ={name:'adhi', age:25, place:'calicut'}
+
+        console.log(student.name, student.age, student.place)
+        console.log (name , typeof(name))
+        console.log (age, typeof(age))
+
+        let marks = [50,60,70,78,65]
+        console.log(marks[0])
+        console.log('total marks=', marks[0]+ marks[1]+ marks[2])
+        console.log('my name is ' + student.name + 'my age is ' + student.age + 'my place is ' +student.place)
+        console.log(`my name is ${student.name} my age is ${student.age} my place is ${student.place}`)
+
+
+        console.log(x)
+        var x = 10
+        var y ='10'
+        console.log(x==y)  // to chk datatypes use===
+        console.log(x!==y)
+
+        student_name = prompt('enter your name ')
+        document.write('<h1>welcome' + student_name + '</h1>')
+    </script>
+<script src="/js/prgm2.js"></script>
+
+</body>
+</html>

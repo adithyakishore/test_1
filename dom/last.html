@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  #timer {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <div id="timer">00:00</div>
+  <button onclick="startTimer()">Start Countdown</button>
+
+  <script>
+    let timeLeft = 60; 
+
+    function updateTimer() {
+      const minutes = Math.floor(timeLeft / 60);
+      const seconds = timeLeft % 60;
+      document.getElementById("timer").innerHTML = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+    }
+
+    function startTimer() {
+      const timerInterval = setInterval(function() {
+        if (timeLeft <= 0) {
+          clearInterval(timerInterval); 
+          document.getElementById("timer").innerHTML = "Time's up!";
+        } else {
+          updateTimer();
+          timeLeft--;
+        }
+      }, 1000); 
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="fav.jpg"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+h1 {
+    font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: green;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: green;
+  margin: 0px 0 70px 0;
+}
+
+    body {
+        max-width: 600px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+div {
+    text-align: center;
+    position: relative;
+    height: 200px;
+    background-size: 100%;
+    margin: 40px 0 0 0;
+    border-radius: 12px;
+}
+.first {
+    margin: 40px 0px 0px 0px;
+    background: url("sh.jpg");
+    border-radius: 10px;
+    
+}
+.second {
+    margin: 40px 0px 0px 0px;
+    background:url("pizz.jfif")
+}
+.third {
+    margin: 40px 0px 0px 0px;
+    background: url("brggg.webp");
+}
+.price {
+    float:right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+}
+small {
+    opacity: 0;
+}
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+</style>
+<body>
+    <h1>ARUN'S RESTUARENT</h1>
+    <h2>east port calicut</h2>
+    <div class="first">
+        <p>shawarma <span class="price"> $22 </span><br/>
+    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus corporis vel asperiores voluptas ipsa laudantium suscipit voluptates ipsum, velit, nemo quas iste! Ullam rerum aliquam qui sequi deserunt dicta autem.</small></p>
+    </div>
+    <div class="second">
+        <p>pizza <span class="price"> $10</span><br />
+    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut harum blanditiis minus culpa mollitia soluta molestias quos, facilis voluptates excepturi expedita aliquid in consequuntur rerum necessitatibus impedit totam adipisci praesentium.</small></p>
+    </div>
+    <div class="third">
+    <p>burger <span class="price">$20</span><br />
+    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque atque sapiente quod minus impedit aspernatur nihil, perspiciatis omnis placeat natus corporis, blanditiis soluta asperiores assumenda quos sunt ea deleniti magni.</small></p>
+    </div>
+    <script> 
+
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <input type="button" value="Add" id="button1">
+        <span id="valid"></span>
+    </form>
+    <script>
+        var name = document.getElementById('name')
+       var submit = document.getElementById('button1')
+var validity =document.getElementById('valid')
+       function add1(){
+            console.log(name.value)
+            if(name.value){
+                validity.innerHTML ='welcome'
+            }else{
+                validity.innerHTML ='no input'
+            }
+            
+            
+
+       }
+       submit.addEventListener('click',add1)
+    </script>
+
+</body>
+</html>

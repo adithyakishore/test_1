@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+         <label for="s1.no">S1.NO</label>
+        <input type="text" id="no"><br><br>
+
+
+        <label for="name">NAME</label>
+        <input type="text" value="" id="name"><br><br>
+
+
+        <label for="age">AGE</label>
+        <input type="text" value="" id="age"><br><br>
+
+
+        <label for="subject">SUBJECT</label>
+        <input type="text" value="" id="sub"><br><br>
+
+        <label for="name">PLACE</label>
+        <input type="text" value="" id="place"><br><br>
+    
+        <input type="button" name="add" value="add" id="validate"></button><br>
+        <script>
+            var no= document.getElementById("no");
+            var nam = document.getElementById("name");
+            var age = document.getElementById("age");
+            var subj = document.getElementById("sub")
+            var pl = document.getElementById("place")
+            var val = document.getElementById("validate")
+            function add(){
+                i = 0
+                var row =tableBody.insertRow()
+                var cell1 =row.insertCell(0)
+                var cell2 =row.insertCell(1)
+                var cell3 =row.insertCell(2)
+                var cell4 =row.insertCell(3)
+                var cell5 =row.insertCell(4)
+                var cell6 =row.insertCell(5)
+                var cell7 =row.insertCell(6)
+                var cell8 =row.insertcell(7)
+                cell1.innerHtml =i +1
+                cell2.innerHtml = Name.value
+                cell3.innerHtml = Age.value
+                cell4.innerHtml = Subject.value
+                cell5.innerHtml = Place.value
+                var statusButton =document.createElement('button')
+                statusButton.innerHTML = 'complete'
+                statusButton.onclick = function status(){
+                    cell6.innerHTML ='completed'
+                }
+                cell6.appendChild(statusButton)
+                
+                var editButton =document.createElement('button')
+                editButton.innerHTML ='edit'
+                cell7.appendChild(editButton)
+                var deleteButton =document.createElement('button')
+                deleteButton.innerHTML ='delete'
+                deleteButton.addEventListener('click',del(event))
+                cell8.appendChild(deleteButton)
+                i++
+            }
+
+            button.addEventListener('click' , add)
+             function del(event){
+                console.log(event.target.parentElement.parentElement)
+             }
+        </script>
+    
+        
+</form>
+
+</body>
+</html>

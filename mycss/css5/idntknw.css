@@ -1,0 +1,41 @@
+h1 {
+    color: aqua;
+    background-color: blue;
+}
+#headn{
+    color:black
+}
+.hihi{
+    color: yellow;
+    text-align: center;
+}
+div p{
+    border: 5px solid red;
+}
+p ::before{
+    content: "before content";
+    font-weight: bold;
+}
+a{
+    color: greenyellow;
+    text-decoration: none;
+}
+a:hover{
+    color: blue;
+}
+a:visited{
+    color: red;
+}
+ul li:first-child{
+color: yellow;
+font-weight: bold;
+}
+ul li::first-letter{
+    color:black;
+    font-size: medium;
+}
+ul li::before{
+    content: "←←←";
+    color: violet;
+    font-weight: bold;
+}

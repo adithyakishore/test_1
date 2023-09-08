@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var global = 'global variable'
+        var y =20
+        function scope(){
+            x= 10
+            var y =10
+            var local = 'local variable'
+            console.log(local)                              // fn akath lle mathre assessible avu
+            console.log(global,'global from inside')
+            console.log('value of x inside',x)
+            console.log('value of y inside',y)
+        }
+        scope()
+        // console.log(local)
+        console.log(global,'global from outside') 
+        console.log('value of x outside',x)               // global annel porthnnumakathunnum access cheyya
+        console.log('value of y outside',y)
+    </script>
+</body>
+</html>

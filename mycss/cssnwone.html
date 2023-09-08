@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .visible {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            visibility: visible;
+        }
+        .hidden {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+           /* visibility: hidden;*/
+           display: none;
+        }
+        .opaque {
+background-color: black;
+color: green;
+padding: 10px;
+margin: 10px;
+opacity: 1;
+
+        }
+        .transparent {
+            background-color: blue;
+            color: yellow;
+            padding: 10px;
+            margin: 10px;
+            opacity: .3;
+        }
+        .gradient{
+            height: 200px;
+            width: 200px;
+            background-image: linear-gradient(45deg,green,blue,yellow);
+            /* background-image: radial-gradient(circle,green,yellow,blue); */
+            box-shadow: 10px 8px 8px yellow;
+        }
+        .overflow{
+            width: 300px;
+            height: 200px;
+            border: 1px solid yellowgreen;
+            padding: 10px;
+            margin: 2px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="visible">this is vible</div>
+    <div class="hidden">this is hidn</div>
+    <div class="visible">this is vible</div>
+    <div class="opaque">this is opq
+    <p>this is paragrph of opaque</p></div>
+    <div class="transparent">this is trns
+        <p>this is</p></div>
+        <div class="gradient"></div>
+        <div class="overflow">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit atque quidem similique quis itaque reiciendis eveniet aliquam nesciunt, praesentium expedita repudiandae, vitae aperiam error in, quisquam deserunt autem. Itaque, distinctio?Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore hic quaerat reprehenderit quo nulla aut amet libero. Eum debitis aliquam, fugiat exercitationem qui ipsum itaque tenetur culpa, vitae voluptate quae.
+                
+            </p>
+        </div>
+</body>
+</html>

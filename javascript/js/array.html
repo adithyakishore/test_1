@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // students_age = [22,'adi' ,23, 24, 25, 26 ]
+        // for(i=0; i<students_age.length; i++){
+
+        //     document.write(i,':',students_age[i]+'<br>')
+        // }one array
+        // document.write(students_age[2]+'<br>',students_age.length)            multidmsn
+
+    
+        // students =[[10,20,30],[40,45,55],[12,13,15]]
+    
+        // document.write(students[1][2]) 
+ var num1=prompt('enter the number of fruit')
+
+ fruits=[[],[]]
+ for(i=0; i<num1;i++){
+    fruits[0][i]=prompt('enter the fruit name')
+    fruits[1][i]=Number(prompt('enter the price of fruit'))
+
+ }
+ sum=0
+ document.write("<table border='1'> <tr><th>fruitname</h1><th>price</th></tr>")
+    for(i=0;i<num1;i++){
+        document.write('<tr><td>'+fruits[0][i]+'</td> <td>'+fruits[1][i]+'</td></tr>')
+        sum= sum+fruits[1][i]
+    }
+ 
+    
+document.write('<tr><td>total</td><td> '+ sum +' </td></tr></table>')
+//  console.log(fruits)
+    </script>
+</body>
+</html>

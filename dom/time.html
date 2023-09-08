@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            border: 2px black solid;
+        }
+    </style>
+</head>
+<body id = "body" style="background-color: White;">
+    <button onclick="colour()" id="button">Change colour</button>
+    <div id="div"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, ad!</p></div>
+    <button onclick="add()" id = "button">button</button>
+    <script>
+        function colour(){
+            var page = document.getElementById("body")
+            var button  = document.getElementById("button")
+            color = page.style.backgroundColor
+            if(color == "white"){
+                page.style.backgroundColor = "black"
+            }
+            else{
+                page.style.backgroundColor = "white"
+            }
+            }
+            function add(){
+                var main = document.getElementById('div')
+                main.classList.add('a')
+                setTimeout(function(){
+                    main.classList.remove('a')
+                },3000)                
+            }
+
+    </script>
+    
+</body>
+</html>
